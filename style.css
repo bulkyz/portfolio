@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -8,16 +10,18 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
     color: white;
+    padding: 2rem 3rem;
+    z-index: 1;
 }
 
 .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+    font-size: 2rem;
 }
 
 .navbar-links ul {
@@ -38,7 +42,8 @@ body {
 }
 
 .navbar-links li:hover {
-    background: #555;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
 }
 
 .toggle-button {
@@ -90,4 +95,41 @@ body {
     .navbar-links.active {
         display: flex;
     }
+
+    .main-title {
+        font-size: 1rem;
+    }
+}
+
+.container {
+    height: 100vh;
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    background: rgb(24, 24, 24);
+    min-height: 100vh;
+    z-index: 2;
+    position: absolute;
+}
+
+.my-story {
+
 }
