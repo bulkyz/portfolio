@@ -16,8 +16,8 @@ timeline
     .to('.bg1', 3, {y: -300})
     .to('.bg2', 3, {y: 100}, '-=3')
     .to('.bg3', 3, {y: 50}, '-=3')
-    .to('.content', 3, {top: '0%'}, '-=3')
-    .fromTo('.my-story', {opacity: 0}, {opacity: 1, duration: 3})
+    .to('.content', 3, {top: '0%'}, '-=2.5')
+    .fromTo('.my-story', {opacity: 0}, {opacity: 1, duration: 1})
 
 // What triggers the animations
 let scene = new ScrollMagic.Scene({
