@@ -22,7 +22,7 @@ timeline
 // What triggers the animations
 let scene = new ScrollMagic.Scene({
     triggerElement: 'section',
-    duration: '200%',
+    duration: '100%',
     triggerHook: 0,
 
 })

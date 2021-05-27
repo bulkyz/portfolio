@@ -80,7 +80,7 @@ body {
     max-width: 36%;
 }
 
-.main-title-button {
+.main-button {
     position: absolute;
     top: 80%;
     left: 50%;
@@ -90,34 +90,34 @@ body {
     border-radius: 2rem;
     border: none;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.1s;
     background: black;
     display: inline-block;
 }
 
-.main-title-button span {
+.main-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: 0.1s;
     background: black;
     color: white;
 }
 
-.main-title-button span:after {
+.main-button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
-.main-title-button:hover span {
+.main-button:hover span {
     padding-right: 15px;
 }
 
-.main-title-button:hover span:after {
+.main-button:hover span:after {
     opacity: 1;
     right: 0;
 }
@@ -151,12 +151,11 @@ body {
     max-width: 40%;
 }
 
-.my-story-button {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    font-size: 1rem;
-    transform: translate(-50%, -65%);
+#my-story-button {
+    background: #ba3433;
+}
+
+#my-story-button span {
     background: #ba3433;
 }
 
