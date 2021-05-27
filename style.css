@@ -9,6 +9,11 @@ body {
     padding: 0;
 }
 
+::selection {
+    color: #ba3433;
+    background: white;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -18,12 +23,11 @@ body {
     align-items: center;
     color: white;
     padding: 2rem 3rem;
-    z-index: 1;
+    z-index: 99;
     font-size: 1rem;
 }
 
 .brand-title {
-    font-weight: bold;
     font-family: 'Pacifico', cursive;
 }
 
@@ -46,7 +50,7 @@ body {
 
 .navbar-links li:hover {
     transform: scale(1.2);
-    transition-duration: 0.3s;
+    transition:  0.1s ease-out;
 }
 
 .toggle-button {
@@ -81,7 +85,41 @@ body {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -80%);
-    color: black;
+    font-size: 1em;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    background: black;
+    display: inline-block;
+}
+
+.main-title-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    background: black;
+    color: white;
+}
+
+.main-title-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.main-title-button:hover span {
+    padding-right: 15px;
+}
+
+.main-title-button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .container {
