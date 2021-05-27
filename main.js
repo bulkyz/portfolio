@@ -13,7 +13,7 @@ toggleButton.addEventListener('click', () => {
 
 // Animations
 timeline
-    .to('.bg1', 3, {y: -300})
+    .to('.bg1', 3, {y: -100})
     .to('.bg2', 3, {y: 100}, '-=3')
     .to('.bg3', 3, {y: 50}, '-=3')
     .to('.content', 3, {top: '0%'}, '-=2.5')
@@ -22,7 +22,7 @@ timeline
 // What triggers the animations
 let scene = new ScrollMagic.Scene({
     triggerElement: 'section',
-    duration: '500%',
+    duration: '200%',
     triggerHook: 0,
 
 })
