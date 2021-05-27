@@ -6,6 +6,8 @@ let timeline = new TimelineMax();
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
+console.log("Home background thanks to https://unsplash.com/@orwhat");
+
 // Hamburger menu toggle
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
@@ -13,10 +15,8 @@ toggleButton.addEventListener('click', () => {
 
 // Animations
 timeline
-    .to('.bg1', 3, {y: -100})
-    .to('.bg2', 3, {y: 100}, '-=3')
-    .to('.bg3', 3, {y: 50}, '-=3')
-    .to('.content', 3, {top: '0%'}, '-=2.5')
+    .to('.bg1', 3, {y: -500})
+    .to('.content', 3, {top: '0%'}, '-=3')
     .fromTo('.my-story', {opacity: 0}, {opacity: 1, duration: 1})
 
 // What triggers the animations

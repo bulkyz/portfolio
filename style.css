@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -12,17 +12,19 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding: 2rem 3rem;
     z-index: 1;
+    font-size: 1rem;
 }
 
 .brand-title {
-    font-size: 2rem;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
 }
 
 .navbar-links ul {
@@ -72,7 +74,14 @@ body {
     font-size: 3vw;
     transform: translate(-50%, -40%);
     max-width: 36%;
-    text-shadow: 2px 3px 5px rgba(0,0,0,0.2);
+}
+
+.main-title-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: black;
 }
 
 .container {
@@ -89,7 +98,7 @@ body {
 
 .content {
     width: 100%;
-    background: rgb(24, 24, 24);
+    background: black;
     min-height: 100vh;
     z-index: 2;
     position: absolute;
@@ -97,20 +106,20 @@ body {
 
 .my-story {
     position: absolute;
-    top: 40%;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+}
+
+.my-story-button {
+    position: absolute;
+    top: 65%;
     left: 50%;
     font-size: 1rem;
-    transform: translate(-50%, -40%);
-    max-width: 36%;
-
-}
-
-.bg2 {
-    top: 350px;
-}
-
-.bg3 {
-    top: 100px;
+    transform: translate(-50%, -65%);
+    background: #ba3433;
 }
 
 @media (max-width: 1300px) {
