@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    color: #fff;
+    color: white;
     font-family: 'Inter', sans-serif;
 }
 
@@ -10,8 +10,12 @@ body {
 }
 
 ::selection {
-    color: #ba3433;
+    color: var(--primary-color);
     background: white;
+}
+
+:root {
+    --primary-color: #ba3433;
 }
 
 .navbar {
@@ -152,11 +156,11 @@ body {
 }
 
 #my-story-button {
-    background: #ba3433;
+    background: var(--primary-color);
 }
 
 #my-story-button span {
-    background: #ba3433;
+    background: var(--primary-color);
 }
 
 @media (max-width: 1300px) {

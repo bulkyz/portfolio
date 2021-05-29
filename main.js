@@ -24,7 +24,6 @@ let scene = new ScrollMagic.Scene({
     triggerElement: 'section',
     duration: '100%',
     triggerHook: 0,
-
 })
 
 // Hooking up animation to the scene
