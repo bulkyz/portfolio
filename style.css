@@ -95,7 +95,7 @@ body {
     border: none;
     cursor: pointer;
     transition: all 0.1s;
-    background: black;
+    background: white;
     display: inline-block;
 }
 
@@ -104,8 +104,8 @@ body {
     display: inline-block;
     position: relative;
     transition: 0.1s;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .main-button span:after {
@@ -140,7 +140,11 @@ body {
 
 .content {
     width: 100%;
-    background: black;
+    background: rgb(20, 20, 20);
+    /*
+    background: url(bg2.png);
+    background-size: 100%;
+    */
     min-height: 100vh;
     z-index: 2;
     position: absolute;
@@ -175,6 +179,7 @@ h3 {
 
 #my-story-button span {
     background: var(--primary-color);
+    color: white;
 }
 
 /* For smaller screens (everything under 1000px) */
