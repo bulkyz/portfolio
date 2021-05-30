@@ -144,15 +144,29 @@ body {
     min-height: 100vh;
     z-index: 2;
     position: absolute;
+
 }
 
 .my-story {
+    font-size: 1.5rem;
+    max-width: 40%;
+}
+
+.my-story-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 1.5rem;
     transform: translate(-50%, -50%);
-    max-width: 40%;
+    padding: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-story-title {
+    font-size: 1.7rem;
 }
 
 #my-story-button {
@@ -163,7 +177,8 @@ body {
     background: var(--primary-color);
 }
 
-@media (max-width: 1300px) {
+/* For smaller screens (everything under 1000px) */
+@media (max-width: 1000px) {
     .toggle-button {
         display: flex;
     }
@@ -198,5 +213,14 @@ body {
     .main-title {
         max-width: 100%;
         font-size: 7vw;
+    }
+
+    .my-story {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .my-story-wrapper {
+        width: 80%;
     }
 }
