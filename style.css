@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    line-height: 1.3;
 }
 
 ::selection {
@@ -17,6 +18,15 @@ body {
 :root {
     --primary-color: rgb(186, 52, 51);
     --secondary-color: rgb(20, 20, 20);
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .navbar {
@@ -184,14 +194,37 @@ h3 {
 }
 
 .work-row-wrapper {
-    background: var(--secondary-color);
-    min-height: 100vh;
-
+    padding: 7em;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 100px;
 }
 
 .work-item {
-    background: white;
+    padding: 2em;
+    height: 300px;
+    color: white;
+    background: url(bg1.jpg);
+    background-size: cover;
+    border: 1px solid rgb(78, 78, 78);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.work-item:hover {
+    cursor: pointer;
+}
+
+.work-container {
+    min-height: 100vh;
+    background: var(--secondary-color);
 }
 
 /* For smaller screens (everything under 1000px) */
