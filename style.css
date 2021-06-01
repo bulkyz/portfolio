@@ -173,6 +173,7 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
+    text-align: center;
 }
 
 h3 {
@@ -211,7 +212,6 @@ h3 {
     color: white;
     background: url(bg1.jpg);
     background-size: cover;
-    border: 1px solid rgb(78, 78, 78);
     position: relative;
     display: flex;
     justify-content: center;
@@ -225,6 +225,67 @@ h3 {
 .work-container {
     min-height: 100vh;
     background: var(--secondary-color);
+}
+
+footer {
+    min-height: 8vh;
+    margin-top: auto;
+}
+
+.footer-content {
+    width: 70%;
+    padding: 2em;
+    color: black;
+}
+
+#selfie {
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    padding: 2em;
+}
+
+#my-story-button {
+    font-size: 1em;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+#my-story-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+    background: var(--primary-color);
+    color: white;
+}
+
+#my-story-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.1s;
+}
+
+#my-story-button:hover span {
+    padding-right: 15px;
+}
+
+#my-story-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.my-story-button-container {
+    padding: 2em;
 }
 
 /* For smaller screens (everything under 1000px) */
