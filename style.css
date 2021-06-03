@@ -152,18 +152,14 @@ h4 {
 .content {
     width: 100%;
     background: var(--secondary-color);
-    /*
-    background: url(bg2.png);
-    background-size: 100%;
-    */
-    min-height: 100vh;
+    height: 100vh;
     z-index: 2;
     position: absolute;
 
 }
 
 .my-story {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 40%;
 }
 
@@ -182,7 +178,8 @@ h3 {
 }
 
 .my-story-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    padding-bottom: 30px;
 }
 
 #my-story-button {
@@ -227,19 +224,8 @@ h3 {
     background: var(--secondary-color);
 }
 
-footer {
-    min-height: 8vh;
-    margin-top: auto;
-}
-
-.footer-content {
-    width: 70%;
-    padding: 2em;
-    color: black;
-}
-
 #selfie {
-    height: 300px;
+    height: 240px;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -333,5 +319,13 @@ footer {
 
     .my-story-wrapper {
         width: 80%;
+    }
+
+    #selfie {
+        height: 180px;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        padding: 2em;
     }
 }
