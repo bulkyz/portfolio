@@ -12,7 +12,7 @@ body {
 
 ::selection {
     color: var(--primary-color);
-    background: white;
+    /* background: white; */
 }
 
 :root {
@@ -138,7 +138,7 @@ h4 {
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container img {
@@ -152,7 +152,7 @@ h4 {
 .content {
     width: 100%;
     background: var(--secondary-color);
-    height: 100vh;
+    min-height: 100vh;
     z-index: 2;
     position: absolute;
 
@@ -161,6 +161,7 @@ h4 {
 .my-story {
     font-size: 1.3rem;
     max-width: 40%;
+    padding: 16px;
 }
 
 .my-story-wrapper {
@@ -179,7 +180,7 @@ h3 {
 
 .my-story-title {
     font-size: 2rem;
-    padding-bottom: 30px;
+    padding-bottom: 1px;
 }
 
 #my-story-button {
@@ -229,7 +230,7 @@ h3 {
     border-radius: 50%;
     display: block;
     margin: auto;
-    padding: 2em;
+    padding: 16px;
 }
 
 #my-story-button {
@@ -274,6 +275,26 @@ h3 {
     padding: 2em;
 }
 
+.project-wrapper {
+    background: var(--secondary-color);
+    min-height: 100vh;
+}
+
+.project-container {
+    margin: auto;
+    max-width: 40%;
+    padding-top: 7em;
+}
+
+.project-text {
+    font-size: 1.3rem;
+}
+
+.project-image {
+    max-width: 100%;
+    padding: 16px 0 16px 0;
+}
+
 /* For smaller screens (everything under 1000px) */
 @media (max-width: 1000px) {
     .toggle-button {
@@ -309,11 +330,11 @@ h3 {
 
     .main-title {
         max-width: 100%;
-        font-size: 7vw;
+        font-size: 2rem;
     }
 
     .my-story {
-        font-size: 1rem;
+        font-size: 0.8rem;
         max-width: 100%;
     }
 
@@ -326,6 +347,14 @@ h3 {
         border-radius: 50%;
         display: block;
         margin: auto;
-        padding: 2em;
+        padding: 1em;
     }
+
+    .project-container {
+        margin: auto;
+        max-width: 100%;
+        padding: 16px;
+        padding-top: 7em;
+    }
+    
 }
