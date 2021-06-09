@@ -313,6 +313,20 @@ h3 {
     background-size: cover;
 }
 
+#item4 {
+    background: url(/images/bg1.jpg);
+    background-size: cover;
+}
+#item5 {
+    background: url(/images/bg1.jpg);
+    background-size: cover;
+}
+
+#item6 {
+    background: url(/images/portfolio.png);
+    background-size: cover;
+}
+
 h6 {
     font-size: 0.7rem;
     padding: 4px;
