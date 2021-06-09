@@ -42,10 +42,6 @@ h4 {
     font-size: 1rem;
 }
 
-.brand-title {
-    font-family: 'Pacifico', cursive;
-}
-
 .navbar-links ul {
     margin: 0;
     padding: 0;
@@ -208,16 +204,20 @@ h3 {
     padding: 2em;
     height: 300px;
     color: white;
-    background: url(bg1.jpg);
+    background: url(/images/bg1.jpg);
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:#000;
+    opacity:0.8;
 }
 
 .work-item:hover {
     cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 1;
 }
 
 .work-container {
@@ -293,6 +293,25 @@ h3 {
 .project-image {
     max-width: 100%;
     padding: 16px 0 16px 0;
+}
+
+.brand-title a {
+    font-family: 'Pacifico', cursive;
+}
+
+#item1 {
+    background: url(/images/semester-buddy.png);
+    background-size: cover;
+}
+
+#item2 {
+    background: url(/images/eatwell.png);
+    background-size: cover;
+}
+
+#item3 {
+    background: url(/images/passion-game.png);
+    background-size: cover;
 }
 
 /* For smaller screens (everything under 1000px) */
