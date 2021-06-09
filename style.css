@@ -203,14 +203,13 @@ h3 {
 .work-item {
     padding: 2em;
     height: 300px;
-    color: white;
     background: url(/images/bg1.jpg);
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#000;
+    background-color:black;
     opacity:0.8;
 }
 
@@ -312,6 +311,27 @@ h3 {
 #item3 {
     background: url(/images/passion-game.png);
     background-size: cover;
+}
+
+h6 {
+    font-size: 0.7rem;
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+h5 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1rem;
 }
 
 /* For smaller screens (everything under 1000px) */
