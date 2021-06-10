@@ -155,7 +155,7 @@ h4 {
 }
 
 .my-story {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     max-width: 40%;
     padding: 16px;
 }
@@ -283,15 +283,19 @@ h3 {
     margin: auto;
     max-width: 40%;
     padding-top: 7em;
+    padding: 15px;
 }
 
 .project-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .project-image {
     max-width: 100%;
     padding: 16px 0 16px 0;
+
+    display: flex;
+    margin: auto;
 }
 
 .brand-title a {
@@ -317,6 +321,7 @@ h3 {
     background: url(/images/bg1.jpg);
     background-size: cover;
 }
+
 #item5 {
     background: url(/images/bg1.jpg);
     background-size: cover;
@@ -346,6 +351,9 @@ h5 {
 
 h4 {
     font-size: 1rem;
+    color: rgba(255, 255, 255, 0.575);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* For smaller screens (everything under 1000px) */
