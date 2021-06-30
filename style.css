@@ -60,7 +60,7 @@ h4 {
 }
 
 .navbar-links li:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition:  0.1s ease-out;
 }
 
@@ -104,6 +104,7 @@ h4 {
     transition: all 0.1s;
     background: white;
     display: inline-block;
+    color: var(--primary-color);
 }
 
 .main-button span {
@@ -112,6 +113,10 @@ h4 {
     position: relative;
     transition: 0.1s;
     background: white;
+    color: var(--primary-color);
+}
+
+.main-button span a{
     color: var(--primary-color);
 }
 
@@ -157,7 +162,7 @@ h4 {
 .my-story {
     font-size: 1.1rem;
     max-width: 40%;
-    padding: 16px;
+    font-weight: 300;
 }
 
 .my-story-wrapper {
@@ -166,7 +171,11 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    text-align: center;
+    display: flex;
+}
+
+.my-content-wrapper {
+    padding: 0px 16px 0px 16px;
 }
 
 h3 {
@@ -225,11 +234,12 @@ h3 {
 }
 
 #selfie {
-    height: 240px;
+    height: 13vw;
     border-radius: 50%;
     display: block;
     margin: auto;
     padding: 16px;
+
 }
 
 #my-story-button {
@@ -272,6 +282,13 @@ h3 {
 
 .my-story-button-container {
     padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
 }
 
 .project-wrapper {
@@ -288,12 +305,12 @@ h3 {
 
 .project-text {
     font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .project-image {
     max-width: 100%;
     padding: 16px 0 16px 0;
-
     display: flex;
     margin: auto;
 }
@@ -399,10 +416,6 @@ h4 {
         max-width: 100%;
     }
 
-    .my-story-wrapper {
-        width: 80%;
-    }
-
     #selfie {
         height: 180px;
         border-radius: 50%;
@@ -418,4 +431,13 @@ h4 {
         padding-top: 7em;
     }
     
+    .my-story-wrapper {
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .my-story-button-container {
+        display: none;
+    }
 }
